@@ -49,13 +49,15 @@ def sum_array(array)
 end
 
 def add_s(array)
-  array.each_with_index.collect do |element, index|
-    if index < 1 and index > 1
-      element << "s"
+  array.collect do |item|
+    if item == item[1]
+      item
+    else 
+      item + "s"
     end
   end
 end
-
+  
     
   
 

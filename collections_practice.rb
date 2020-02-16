@@ -50,7 +50,8 @@ end
 
 def add_s(array)
   array.each_with_index.collect do |element, index|
-    "s" << element if index < 1 or index > 1
+     element << "s" if index < 1 or index > 1
+  else return element
   end
 end
 
